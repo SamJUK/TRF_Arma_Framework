@@ -1,2 +1,2 @@
-#include "dialog\notification.hpp"
-#include "dialog\ui.hpp"
+#include "notification.hpp"
+#include "ui.hpp"
