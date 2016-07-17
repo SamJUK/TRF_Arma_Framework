@@ -1,0 +1,520 @@
+version=52;
+class EditorData
+{
+	moveGridStep=4;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=1;
+	class ItemIDProvider
+	{
+		nextID=72;
+	};
+	class MarkerIDProvider
+	{
+		nextID=1;
+	};
+	class Camera
+	{
+		pos[]={6882.7163,7.260675,7387.8345};
+		dir[]={-0.58522093,-0.81094444,-0.011835342};
+		up[]={-0.81079161,0.58509862,-0.016392967};
+		aside[]={-0.020216351,2.9931107e-006,0.99988389};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"A3_Ui_F",
+	"A3_Structures_F_Items_Vessels",
+	"A3_Structures_F_EPA_Items_Food",
+	"A3_Structures_F_Civ_Market",
+	"A3_Characters_F_Exp",
+	"A3_Soft_F_Beta_Truck_01",
+	"A3_Structures_F_Civ_Garbage",
+	"A3_Structures_F_Bootcamp_Civ_SportsGrounds",
+	"A3_Supplies_F_Heli_CargoNets",
+	"A3_Structures_F_EPA_Mil_Scrapyard",
+	"A3_Structures_F_EPB_Items_Military",
+	"A3_Weapons_F_Ammoboxes",
+	"A3_Structures_F_Bootcamp_Items_Electronics",
+	"A3_Soft_F_Gamma_Van_01",
+	"A3_Soft_F_Quadbike_01",
+	"A3_Soft_F_Offroad_01"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=11;
+		class Item0
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Structures_F";
+			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item2
+		{
+			className="A3_Structures_F_EPA";
+			name="Arma 3 Survive Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item3
+		{
+			className="A3_Characters_F_Exp";
+			name="Arma 3 Apex - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item4
+		{
+			className="A3_Soft_F_Beta";
+			name="Arma 3 Beta - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item5
+		{
+			className="A3_Structures_F_Bootcamp";
+			name="Arma 3 Bootcamp Update - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item6
+		{
+			className="A3_Supplies_F_Heli";
+			name="Arma 3 Helicopters - Ammoboxes and Supplies";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item7
+		{
+			className="A3_Structures_F_EPB";
+			name="Arma 3 Adapt Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item8
+		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item9
+		{
+			className="A3_Soft_F_Gamma";
+			name="Arma 3 - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item10
+		{
+			className="A3_Soft_F";
+			name="Arma 3 Alpha - Unarmored Land Vehicles";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+	};
+};
+randomSeed=9191346;
+class ScenarioData
+{
+	author="SamJ";
+};
+class Mission
+{
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=6;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogBase=250;
+		forecastFogBase=250;
+		startFogDecay=0.014;
+		forecastFogDecay=0.014;
+	};
+	class Entities
+	{
+		items=20;
+		class Item0
+		{
+			dataType="Marker";
+			position[]={6878.2539,1.1857488e+029,7371.9404};
+			name="marker_0";
+			text="FOOD + WATER";
+			type="mil_destroy";
+			id=6;
+			atlOffset=1.1857488e+029;
+		};
+		class Item1
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6883.6279,3.0647526,7365.9912};
+				angles[]={0,0.46522316,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addAction[""Drink"", {[_this select 0,dbarrel]call sam_fnc_drink}];";
+			};
+			id=34;
+			type="Land_BarrelWater_F";
+		};
+		class Item2
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6884.9014,2.7908499,7366.3018};
+				angles[]={0,0.46522316,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addAction[""Drink"", {[_this select 0,dbottle]call sam_fnc_drink}];";
+			};
+			id=35;
+			type="Land_BottlePlastic_V2_F";
+		};
+		class Item3
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6880.1431,3.0507874,7365.6836};
+				angles[]={0,3.0088775,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addAction[""Eat"", {[_this select 0,fbags]call sam_fnc_eat}];";
+			};
+			id=36;
+			type="Land_Sacks_heap_F";
+		};
+		class Item4
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6882.1133,2.8185802,7365.7437};
+				angles[]={0,3.0849006,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addAction[""Eat"", {[_this select 0,fcereal]call sam_fnc_eat}];";
+			};
+			id=37;
+			type="Land_CerealsBox_F";
+		};
+		class Item5
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={6878.0024,2.6614389,7388.9946};
+						angles[]={0,2.7983639,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=40;
+					type="B_T_Recon_JTAC_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=39;
+		};
+		class Item6
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6888,4.8847904,7400};
+				angles[]={0,6.0693445,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=42;
+			type="B_Truck_01_transport_F";
+			atlOffset=-2.3841858e-007;
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6876.0171,2.7343123,7385.9312};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addAction[""Move"", {[_this select 0,_this select 2]call sam_fnc_logistics}];";
+			};
+			id=44;
+			type="Land_Tyre_F";
+		};
+		class Item8
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6875.9771,2.9822567,7384.7119};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=46;
+			type="TyreBarrier_01_black_F";
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6876.8721,3.188761,7382.1187};
+				angles[]={0,1.3856941,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=51;
+			type="CargoNet_01_barrels_F";
+		};
+		class Item10
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6878.5903,3.0826752,7382.3608};
+				angles[]={0,4.2227325,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=52;
+			type="Land_MetalBarrel_F";
+		};
+		class Item11
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6877.4888,3.2955155,7379.4458};
+				angles[]={0,1.3711826,6.256525};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=53;
+			type="CargoNet_01_box_F";
+		};
+		class Item12
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6874.459,3.2679982,7399.0737};
+				angles[]={0,1.3855921,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=55;
+			type="Land_PaperBox_open_full_F";
+			atlOffset=-2.3841858e-007;
+		};
+		class Item13
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6876.5537,3.267035,7399.4619};
+				angles[]={0,1.3967468,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=56;
+			type="Land_PaperBox_open_empty_F";
+			atlOffset=2.3841858e-007;
+		};
+		class Item14
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6874.6768,2.7653627,7397.2832};
+				angles[]={0,1.3640243,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=57;
+			type="Land_Ammobox_rounds_F";
+		};
+		class Item15
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6873.9063,2.9440548,7397.2769};
+				angles[]={0,6.2147055,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=61;
+			type="Box_NATO_Ammo_F";
+		};
+		class Item16
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6876.228,2.7871804,7383.6929};
+				angles[]={0,1.3997105,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=62;
+			type="Land_CarBattery_01_F";
+		};
+		class Item17
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6891.5723,4.5316267,7385.3677};
+				angles[]={0,6.0833044,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=64;
+			type="B_G_Van_01_transport_F";
+			atlOffset=2.3841858e-007;
+		};
+		class Item18
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6895.4492,4.2862864,7366.6211};
+				angles[]={0,6.0511537,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=67;
+			type="B_Quadbike_01_F";
+			atlOffset=-2.3841858e-007;
+		};
+		class Item19
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6894.2397,4.2715025,7374.0005};
+				angles[]={0,6.0512552,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=70;
+			type="C_Offroad_01_F";
+			atlOffset=-2.3841858e-007;
+		};
+	};
+};

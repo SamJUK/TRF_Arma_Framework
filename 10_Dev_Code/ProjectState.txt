@@ -1,0 +1,45 @@
+//Working On
+  Currency System - Untested
+    Buying  - Started
+    Selling - Not Started
+
+  Logistics
+    Loading into Vehicles - Not Started
+    Picking Stuff Up And Moving It - Started
+
+
+
+//Finished?
+
+
+//Not Started
+  Repair System
+    In-depth Repairing
+      Individual Parts Damage
+      Replace Broken Parts
+      Parts take up realistic space in vehicles
+
+  Statistics System
+    Save
+      Player Stats
+        Time Played As _x
+        Friendly/Enemy Player Kills
+        Friendly/Enemy AI Kills
+        Friendly/Enemy Kills From Vehicles
+        Friendly/Enemy Vehicle Kills
+        Deaths From Friendly/Enemy/WhileInVehicles/Vehicles
+
+    _x =
+    Opfor
+      Russia
+      China
+      Koreans
+      Insurgents/ISIS etc.
+    Blufor
+      US
+      UK
+      Sweden
+      Germany
+      France
+      Netherlands
+      Norway

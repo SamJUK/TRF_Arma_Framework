@@ -1,0 +1,39 @@
+//Acronyms
+  F/E = On Friendly Or Enemy | Values - Friendly, Enemy
+  FV = From Vehicle | Values - True, False
+  IV = In Vehicle | Values - True, False
+  PS = Player Side | Values - Russia, China, Koreans, Insurgents/ISIS, US, UK, Sweden, Germany, France, Netherlands, Norway
+  ES = Enemy Side | Values - Russia, China, Koreans, Insurgents/ISIS, US, UK, Sweden, Germany, France, Netherlands, Norway
+  TP = Time Played | Value - Numerical
+
+Database: Raven Statistics
+  Table:  Player Stats
+
+      PlayerUID | Kills | Deaths | TimePlayed |
+
+
+      PlayerUID = 0123456789
+      Kills = [F/E, FV, IV, PS, ES]
+      E.G || [Enemy, False, False, UK, Russia]
+        [Did he kill a friendly or enemy? | Did he kill him from a vehicle? | Was the enemy in a vehicle? | What's the players side? | What side was the enemy on?]
+      Deaths = [F/E, FV, IV, PS, ES]
+      E.G || [Enemy, True, False, UK, Russia]
+        [Did he die from a friendly or enemy? | Did he die by an enemy in a vehicle? | Was he in a vehicle? | What's the players side? | What side was the enemy on?]
+      TimePlayed = [[PS,TP]]
+      E.G || [[UK, 915],[Russia, 232],[US,218]]
+        [[What side player was on, how long was it on it]]
+
+
+
+
+
+
+
+
+
+
+  Table:
+  Table:
+  Table:
+  Table:
+  Table:

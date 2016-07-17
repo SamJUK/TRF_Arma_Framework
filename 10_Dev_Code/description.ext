@@ -1,0 +1,18 @@
+//Styling
+#include "dialog\init.sqf"
+
+//Hud Elements
+class RscTitles
+{
+    titles[]={};
+
+
+  #include "dialog\notification.hpp"
+	#include "core\hud\ui.hpp"
+};
+
+//Functions
+class Cfgfunctions
+{
+  #include "functions.hpp"
+};
