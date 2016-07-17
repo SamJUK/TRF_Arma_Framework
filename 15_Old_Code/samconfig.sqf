@@ -12,9 +12,9 @@
 //Earplugs
   SamEnableEarplugs = true; //Enables Earplugs || True/False
 
-//Exec Sam's Init
-  []execVM "core\init.sqf";
-
 //Currency | In $
   SamEnableCurrency = true;
   SamPaycheckValue = 100; //Sets Paycheck Value
+
+//Exec Sam's Init
+  []execVM "core\init.sqf";

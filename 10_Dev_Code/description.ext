@@ -23,7 +23,7 @@
   };
 
 //Functions
-  class Cfgfunctions
+  class CfgFunctions
   {
-    #include "functions.hpp"
+      #include "Functions.h"
   };

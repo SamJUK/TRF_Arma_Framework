@@ -1,7 +1,7 @@
 disableSerialization;
-if (sam_tablet_turning_on == 1) exitWith {};
-if (sam_tablet_power_state == 0) then {
-  sam_tablet_turning_on = 1;
+if (TRF_tablet_turning_on == 1) exitWith {};
+if (TRF_tablet_power_state == 0) then {
+  TRF_tablet_turning_on = 1;
   _display = uiNameSpace getVariable ["sam_tablet", displayNull];
   _bgsplash = _display displayCtrl 503;
   _bgsplash ctrlSetFade 1;
@@ -21,6 +21,6 @@ if (sam_tablet_power_state == 0) then {
   }forEach _apps;
   waitUntil {ctrlCommitted _bgsplash};
 	_bgsplash ctrlShow false;
-  sam_tablet_turning_on = 0;
-  sam_tablet_power_state = 0;
+  TRF_tablet_turning_on = 0;
+  TRF_tablet_power_state = 0;
 };

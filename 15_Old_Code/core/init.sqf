@@ -1,5 +1,4 @@
 //Execution Of External Files
-  []execVM "samconfig.sqf"; //Read Framework Settings
   []execVM "core\samvariablesinit.sqf"; //Create Variables For Further Use
   []execVM "core\hud\init.sqf"; //Create The HUD
   []execVM "core\evh\init.sqf";  //Setup EventHandlers

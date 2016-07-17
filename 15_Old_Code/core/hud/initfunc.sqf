@@ -24,4 +24,6 @@
       _ep = player getVariable "sam_earplugs";
       if (_ep == 0) then {((uiNamespace getVariable 'ninfwHUD') displayCtrl 9800) ctrlShow false;};
       if (_ep == 1) then {((uiNamespace getVariable 'ninfwHUD') displayCtrl 9800) ctrlShow true;};
+
+      systemChat "Hud Refresh Called";
   };

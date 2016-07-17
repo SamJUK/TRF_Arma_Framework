@@ -1,10 +1,6 @@
 class TRF_Framework
 {
-  class anything
-  {
-    tag = "TRF";
-  };
-
+  tag = "TRF";
   class Master_Directory
   {
     file = "core";
@@ -42,10 +38,17 @@ class TRF_Framework
   {
     file = "core\logistics";
     class logistics {};
+    class pickup {};
+    class drop {};
+    class load {};
+    class unload {};
+    class use {};
+    class listboxes {};
   };
 
   class notifications
   {
+    file = "core\notifications"
     class samNotify {};
   };
 
@@ -57,6 +60,8 @@ class TRF_Framework
 
   class tablet
   {
+    file = "core\tablet"
+    class tabletUse {};
     class tabletPowerOn {};
     class tabletPower {};
   };

@@ -8,18 +8,18 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=72;
+		nextID=76;
 	};
 	class MarkerIDProvider
 	{
-		nextID=1;
+		nextID=3;
 	};
 	class Camera
 	{
-		pos[]={6892.6914,12.321806,7391.7349};
-		dir[]={-0.68097275,-0.51678777,-0.51909596};
-		up[]={-0.41108137,0.85604405,-0.31335703};
-		aside[]={-0.60628283,1.0461081e-006,0.79535866};
+		pos[]={6879.2627,5.6161404,7389.2773};
+		dir[]={-0.67026657,-0.73431897,-0.10772693};
+		up[]={-0.72512889,0.67867976,-0.11654512};
+		aside[]={-0.15869185,5.3620897e-007,0.98736846};
 	};
 };
 binarizationWanted=0;
@@ -40,13 +40,14 @@ addons[]=
 	"A3_Structures_F_Bootcamp_Items_Electronics",
 	"A3_Soft_F_Gamma_Van_01",
 	"A3_Soft_F_Quadbike_01",
-	"A3_Soft_F_Offroad_01"
+	"A3_Soft_F_Offroad_01",
+	"A3_Structures_F_Ind_Cargo"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=11;
+		items=12;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -124,6 +125,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
+		class Item11
+		{
+			className="A3_Structures_F_Ind";
+			name="Arma 3 - Industrial Structures";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
 	};
 };
 randomSeed=9191346;
@@ -155,7 +163,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=20;
+		items=23;
 		class Item0
 		{
 			dataType="Marker";
@@ -172,13 +180,13 @@ class Mission
 			class PositionInfo
 			{
 				position[]={6883.6279,3.0647526,7365.9912};
-				angles[]={0,0.46522316,0};
+				angles[]={0,0.46521753,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this addAction[""Drink"", {[_this select 0,dbarrel]call sam_fnc_drink}];";
+				init="this addAction[""Drink"", {[_this select 0,dbarrel]call trf_fnc_drink}];";
 			};
 			id=34;
 			type="Land_BarrelWater_F";
@@ -188,14 +196,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6884.9014,2.7908499,7366.3018};
-				angles[]={0,0.46522316,0};
+				position[]={6884.9009,2.7908499,7366.3018};
+				angles[]={0,0.46521753,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this addAction[""Drink"", {[_this select 0,dbottle]call sam_fnc_drink}];";
+				init="this addAction[""Drink"", {[_this select 0,dbottle]call trf_fnc_drink}];";
 			};
 			id=35;
 			type="Land_BottlePlastic_V2_F";
@@ -205,14 +213,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6880.1431,3.0507874,7365.6836};
-				angles[]={0,3.0088775,0};
+				position[]={6880.1431,3.0507874,7365.6841};
+				angles[]={0,3.0088778,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this addAction[""Eat"", {[_this select 0,fbags]call sam_fnc_eat}];";
+				init="this addAction[""Eat"", {[_this select 0,fbags]call trf_fnc_eat}];";
 			};
 			id=36;
 			type="Land_Sacks_heap_F";
@@ -222,14 +230,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={6882.1133,2.8185802,7365.7437};
-				angles[]={0,3.0849006,0};
+				position[]={6882.1128,2.8185802,7365.7441};
+				angles[]={0,3.0849044,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				init="this addAction[""Eat"", {[_this select 0,fcereal]call sam_fnc_eat}];";
+				init="this addAction[""Eat"", {[_this select 0,fcereal]call trf_fnc_eat}];";
 			};
 			id=37;
 			type="Land_CerealsBox_F";
@@ -315,7 +323,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this addAction[""Move"", {[_this select 0,_this select 2]call sam_fnc_logistics}];";
 			};
 			id=44;
 			type="Land_Tyre_F";
@@ -515,6 +522,41 @@ class Mission
 			id=70;
 			type="C_Offroad_01_F";
 			atlOffset=-2.3841858e-007;
+		};
+		class Item20
+		{
+			dataType="Marker";
+			position[]={6876.1929,5.3436292e+027,7389.9961};
+			name="marker_1";
+			text="Logistics";
+			type="mil_destroy";
+			id=72;
+			atlOffset=5.3436292e+027;
+		};
+		class Item21
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={6875.2539,3.9843099,7393.4058};
+				angles[]={0,4.5330391,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				init="this addAction[""Open"", {[_this select 0,""All""]call trf_fnc_logistics}];";
+			};
+			id=73;
+			type="Land_Cargo20_grey_F";
+		};
+		class Item22
+		{
+			dataType="Marker";
+			position[]={6876.1797,2.6600001,7388.1152};
+			name="Logi_Con_1";
+			type="Empty";
+			id=74;
 		};
 	};
 };

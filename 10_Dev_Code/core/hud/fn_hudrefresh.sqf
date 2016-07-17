@@ -3,8 +3,8 @@ disableSerialization;
   _dmg = round (100 - (damage player) / 1 * 100);
 
 //Get players hunger and thirst
-  _thirst = player getVariable "sam_thirst";
-  _hunger = player getVariable "sam_hunger";
+  _thirst = player getVariable "TRF_thirst";
+  _hunger = player getVariable "TRF_hunger";
 //Hud shit
   waitUntil {!isNull (uiNameSpace getVariable "ninfwHUD")};
   _display = uiNameSpace getVariable "ninfwHUD";
@@ -19,6 +19,6 @@ disableSerialization;
     _setTextThirst ctrlsetstructuredtext (parseText format ["Thirst: %1%2", _thirst, "%"]);
 
 //Check if earplugs are in use
-  _ep = player getVariable "sam_earplugs";
+  _ep = player getVariable "TRF_earplugs";
   if (_ep == 0) then {((uiNamespace getVariable 'ninfwHUD') displayCtrl 9800) ctrlShow false;};
   if (_ep == 1) then {((uiNamespace getVariable 'ninfwHUD') displayCtrl 9800) ctrlShow true;};

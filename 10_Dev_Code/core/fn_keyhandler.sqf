@@ -11,10 +11,11 @@ switch (_this) do {
 	*/
 		//F1 Key - Ear Plugs
 	case 59: {
-			[]spawn sam_fnc_earplugs;
+			[]spawn TRF_fnc_earplugs;
 			_handled = true;
 	};
 
+	//Number 4 Key - Holster Weapon
 	case 5:{
 		player action ["SwitchWeapon", player, player, 100];
 		_handled = true;
@@ -22,7 +23,7 @@ switch (_this) do {
 
 		//F2 Key - Tablet
 	case 60: {
-			[]call sam_tablet_use;
+			[]call TRF_fnc_tabletUse;
 	};
 
 };

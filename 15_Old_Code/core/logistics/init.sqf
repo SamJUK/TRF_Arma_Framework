@@ -12,5 +12,4 @@ sam_fnc_logistics={
         }];
     };
   };
-
 };

@@ -1,5 +1,6 @@
 //Hud Change Function
   sam_fnc_hud_state_change={
+    systemChat "Hud State Change Called";
     //Update Earplugs HUD Status
     if (0 == (player getVariable "sam_earplugs")) then { //If earpugs are not in
       ((uiNamespace getVariable 'ninfwHUD') displayCtrl 9800) ctrlShow false; //Hide Icon
@@ -12,6 +13,7 @@
 if (SamEnableEarplugs) then {
   sam_fnc_earplugs = {
     disableSerialization;
+    systemChat "Earplugs Called";
     _display = uiNameSpace getVariable "ninfwHUD";
     _ctrl = _display displayCtrl 9800;
     switch (player getVariable "sam_earplugs") do {

@@ -13,6 +13,7 @@ KeyHandler = {
 
 		//F1 Key - Ear Plugs
 		case 59: {
+		    systemChat "Keyhandler Earplugs";
 				[]spawn sam_fnc_earplugs;
 				_handled = true;
 		};

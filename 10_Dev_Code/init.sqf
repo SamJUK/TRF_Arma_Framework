@@ -1,3 +1,4 @@
 //File Name: init.sqf
 Start_Progress = true;
-[]execVM "samconfig.sqf";
+[]execVM "TRFconfig.sqf";
+[]execVM "core\init.sqf";
