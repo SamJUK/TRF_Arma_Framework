@@ -1,3 +1,5 @@
 #include "common.hpp"
-#include "samdefines.hpp"
+#include "notification.hpp"
 #include "sam_tablet.hpp"
+#include "samdefines.hpp"
+#include "ui.hpp"

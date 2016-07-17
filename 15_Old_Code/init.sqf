@@ -1,0 +1,1 @@
+[]execVM "samconfig.sqf";

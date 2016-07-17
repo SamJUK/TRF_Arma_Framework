@@ -1,18 +1,29 @@
-//Styling
-#include "dialog\init.sqf"
+//File Name: description.ext
+  author = "TRF Development Team";
+  onLoadName = "TRF Framework";
+  onLoadMission = "http://www.theravenfederation.com";
+  loadScreen = "loadScreen.paa";
+  disableChannels[]={{0,true,true},{1,false,true},{2,true,true},{6,true,true}};
+  enableDebugConsole = 1;
+  class Header
+  {
+  	gameType = Coop; // MP mission type
+  };
 
-//Hud Elements
-class RscTitles
-{
-    titles[]={};
+//GUI
+  //Styling
+  #include "dialog\init.sqf"
 
+  //Hud Elements
+  class RscTitles
+  {
+      titles[]={};
 
-  #include "dialog\notification.hpp"
-	#include "core\hud\ui.hpp"
-};
+      #include "dialog\initRsc.sqf"
+  };
 
 //Functions
-class Cfgfunctions
-{
-  #include "functions.hpp"
-};
+  class Cfgfunctions
+  {
+    #include "functions.hpp"
+  };
